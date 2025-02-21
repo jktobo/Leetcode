@@ -7,3 +7,4 @@ class Solution:
                 candies[i] = True
             else:
                 candies[i] = False
+        return candies
