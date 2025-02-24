@@ -4,9 +4,9 @@ class Solution:
         answer = [1] * n
         
         prefix = 1
-        for i in range(n):
+        for i, num in enuerate(nums):
             answer[i] = prefix
-            prefix *= nums[i]
+            prefix *= num
         suffix = 1
         for i in range(n-1, -1, -1):
             answer[i] *= suffix
